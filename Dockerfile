@@ -11,6 +11,7 @@ RUN conda install -c conda-forge ipython-autotime
 #RUN conda install -y r-essentials r-base
 RUN conda update --all
 RUN pip install sdeint
+RUN pip install optuna
 
 WORKDIR /workdir
 EXPOSE 8888
