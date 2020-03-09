@@ -12,6 +12,8 @@ RUN conda install -c conda-forge ipython-autotime
 RUN conda update --all
 RUN pip install sdeint
 RUN pip install optuna
+RUN pip install ddeint
+RUN pip install nnabla-ext-cuda101
 
 WORKDIR /workdir
 EXPOSE 8888
